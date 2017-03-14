@@ -1,0 +1,53 @@
+.all-b-container
+  display: flex
+  width: 1200px
+  flex-wrap: wrap
+  -webkit-perspective: 750
+  perspective: 750
+  -webkit-perspective-origin: right top
+  perspective-origin: right top
+  -webkit-transform-style: preserve-3d
+  transform-style: preserve-3d
+  width: 600px
+  margin-left: 100px
+  margin-top: 430px
+
+.preview-fly-b-container
+  flex-grow: 1
+  position: relative
+  margin-top: -400px
+  &:hover
+    .fly-b-page-mid
+      transform: translateY(-135px) skewY(10deg) rotateZ(20deg) rotateX(70deg)
+      opacity: 0.3
+      transition: all 0.3s ease-out
+    .fly-b-page-mid-bottom
+      transform: translateY(-270px) skewY(10deg) rotateZ(20deg) rotateX(70deg)
+      opacity: 0.3
+      transition: all 0.3s ease-out
+    .fly-b-page-bottom
+      transform: translateY(-405px) skewY(10deg) rotateZ(20deg) rotateX(70deg)
+      opacity: 0.3
+      transition: all 0.3s ease-out
+
+.fly-b-page-top, .fly-b-page-mid, .fly-b-page-mid-bottom, .fly-b-page-bottom
+  position: relative
+  width: 250px
+  height: 150px
+  border-radius: 5px
+  background-color: violet
+  transform-origin: center bottom
+  -webkit-transform-origin: center bottom
+  transform: skewY(10deg) rotateZ(20deg) rotateX(70deg)
+  transform-style: preserve-3d
+  -webkit-transform-style: preserve-3d
+  transition: all 0.25s ease-in
+
+.fly-b-page-mid
+  transform: translateY(-150px) skewY(10deg) rotateZ(20deg) rotateX(70deg)
+
+.fly-b-page-mid-bottom
+  transform: translateY(-300px) skewY(10deg) rotateZ(20deg) rotateX(70deg)
+
+.fly-b-page-bottom
+  transform: translateY(-450px) skewY(10deg) rotateZ(20deg) rotateX(70deg)

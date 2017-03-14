@@ -1,0 +1,32 @@
+.preview-block-container
+  position: absolute
+  left: 100px
+  top: 100px
+  &:hover
+    .page-top
+      transform: scale(1.06) translateX(-15px)
+      transition: all 0.3s ease-out
+    .page-under-1
+      z-index: 4
+      transform: scale(1.04) translateX(-10px)
+      transition: all 0.3s ease-out
+    .page-under-2
+      z-index: 3
+      transform: scale(1.02) translateX(-5px)
+      transition: all 0.3s ease-out
+    .page-under-3
+      z-index: 2
+      transition: all 0.3s ease-out
+
+.page-top, .page-under-1, .page-under-2, .page-under-3
+  position: absolute
+  z-index: 5
+  width: 250px
+  height: 150px
+  border-radius: 2px
+  background-color: violet
+  transform-origin: center right
+  transition: all 0.4s ease-in
+
+.page-under-1, .page-under-2, .page-under-3
+  opacity: 0.3

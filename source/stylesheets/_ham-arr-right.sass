@@ -1,0 +1,34 @@
+.ham-arr-right-container
+  display: flex
+  position: relative
+  width: 35px
+  height: 35px
+  left: 100px
+  top: 100px
+  transition: all 0.3 ease-in
+  &:hover
+    .ham-arr-right-top
+      transform: rotate(-45deg) translateY(10px) scaleX(0.7)
+      transition: all 0.3s ease-out
+    .ham-arr-right-inner
+      transform: scale(0.95)
+      transition: all 0.3s ease-out
+    .ham-arr-right-bottom
+      transform: rotate(45deg) translateY(-10px) scaleX(0.7)
+      transition: all 0.3s ease-out
+
+.ham-arr-right-top, .ham-arr-right-inner, .ham-arr-right-bottom
+  position: absolute
+  align-self: center
+  width: 100%
+  border-radius: 2px
+  background-color: violet
+  height: 4px
+  transform-origin: center center
+  transition: all 0.3s ease-in
+
+.ham-arr-right-top
+  transform: translateY(12px)
+
+.ham-arr-right-bottom
+  transform: translateY(-12px)
