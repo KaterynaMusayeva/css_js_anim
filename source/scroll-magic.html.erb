@@ -3,37 +3,18 @@
     <div class="spacer s1"></div>
     <div class="spacer s2"></div>
     <div id="animate1" class="box2">
-      <p>I love Scroll Magic!</p>
+      <p>A mudança e transição são o núcleo da condição humana.</p>
+    </div>
+    <div id="animate1" class="circle-arrow">
+      <div class="left-arrow-line"></div>
+      <div class="right-arrow-line"></div>
     </div>
     <div class="spacer s3"></div>
     <div id="trigger1" class="spacer s4"></div>
     <div class="spacer s5"></div>
     <div class="spacer s6"></div>
     <div class="spacer s7"></div>
-    <div class="spacer s8"></div>
+    <!-- <div class="spacer s8"></div>
     <div class="spacer s9"></div>
-    <div class="spacer s10"></div>
+    <div class="spacer s10"></div> -->
 </div>
-
-<script>
-	// init controller
-	var controller = new ScrollMagic.Controller();
-</script>
-
-<style type="text/css">
-#animate1 {
-	transition: transform 0.5s ease-out;
-}
-.zap {
-	transform: translate(0, 50px) scale(2.5, 2.5);
-  opacity: 0.5;
-}
-</style>
-
-<script>
-	// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1"})
-					// trigger animation by adding a css class
-					.setClassToggle("#animate1", "zap")
-					.addTo(controller);
-</script>

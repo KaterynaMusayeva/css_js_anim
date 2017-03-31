@@ -1,14 +1,12 @@
 .scroll-example
   width: 100%
   height: auto
-  font-size: 13px
-  color: white
-  background-color: violet
+  background-color: white
 
 .spacer
   text-align: center
   min-height: 100px
-  border: 1px dotted white
+  border: 1px white
   .s0
     min-height: 1px
   .s1
@@ -33,13 +31,48 @@
     min-height: 1000px
 
 .box2
-  display: inline-block
+  display: block
   position: relative
+  font-size: 36px
+  font-family: 'Open Sans'
+  letter-spacing: -1px
+  font-weight: 300
   border-radius: 3px
-  background-color: lightblue
+  color: grey
+  opacity: 0.2
   text-align: center
   vertical-align: middle
-  padding: 0 20px
-  min-width: 100px
-  height: 40px
+  transform: translateY(200px)
+  width: 580px
   margin: 0 auto
+  height: auto
+
+.circle-arrow
+  display: flex
+  position: relative
+  height: 50px
+  width: 50px
+  margin: 50px auto 0 auto
+  padding: 5px
+  border-radius: 50%
+  background-color: #ffbb02
+  transform: translateY(200px)
+  opacity: 0.1
+
+.left-arrow-line, .right-arrow-line
+  background-color: white
+  height: 3px
+  width: 20px
+  border-radius: 2px
+  transform: rotate(45deg) translate(22px, 14px)
+  margin: 0 auto
+
+.right-arrow-line
+  transform: rotate(-45deg) translate(-22px, 14px)
+
+#animate1
+  transition: transform 1s ease-in
+
+.zap
+  transform: translate(0, 200px) scale(1.05, 1.05)
+  opacity: 0.7
