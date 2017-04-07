@@ -1,4 +1,5 @@
 //= require ./TweenMax
-//= require ./jquery.gsap
 //= require ./ScrollMagic
-//= require ./custom
+//= require ./animation.gsap
+//= require ./sm-slide-out
+//= require ./sm-rotate

@@ -8,15 +8,13 @@ function ready(fn) {
 
 ready(function() {
 
-
   var controller = new ScrollMagic.Controller();
 
   // build scene
-  var scene = new ScrollMagic.Scene({triggerElement: "#trigger1"})
+  // var scene = new ScrollMagic.Scene({triggerElement: "#trigger1"})
+  var scene = new ScrollMagic.Scene({offset: 100})
           // trigger animation by adding a css class
-          .setClassToggle("#animate1", "zap")
+          .setClassToggle("#animate1, #animate2", "zap")
           .addTo(controller);
-
-
 
 });
