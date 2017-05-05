@@ -3,37 +3,21 @@
   height: auto
   background-color: white
 
-.spacer
-  text-align: center
-  min-height: 100px
-  .s0
-    min-height: 1px
-  .s1
-    min-height: 100px
-  .s2
-    min-height: 200px
-  .s3
-    min-height: 300px
-  .s4
-    min-height: 400px
-  .s5
-    min-height: 500px
-  .s6
-    min-height: 600px
-  .s7
-    min-height: 700px
-  .s8
-    min-height: 800px
-  .s9
-    min-height: 900px
-  .s10
-    min-height: 1000px
+.top-block-slide-out
+  height: 600px
 
-.box2
+#trigger-element-slide-out
+  min-height: 100px
+
+.bottom-block-slide-out
+  height: 400px
+
+.text-block
   display: block
   position: relative
   font-size: 36px
   font-family: 'Open Sans'
+  padding: 0 30px
   letter-spacing: -1px
   font-weight: 300
   border-radius: 3px
@@ -42,7 +26,7 @@
   text-align: center
   vertical-align: middle
   transform: translateY(200px)
-  width: 580px
+  max-width: 580px
   margin: 0 auto
   height: auto
 
@@ -72,6 +56,6 @@
 #animate1
   transition: transform 1s ease-in
 
-.zap
+.transformation
   transform: translate(0, 200px) scale(1.05, 1.05)
   opacity: 0.7
