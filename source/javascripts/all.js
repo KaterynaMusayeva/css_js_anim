@@ -4,3 +4,4 @@
 //= require ./sm-slide-out
 //= require ./sm-rotate
 //= require ./sm-bar
+//= require ./sm-both
